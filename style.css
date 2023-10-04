@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(242, 245, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full {
+    width: 50%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: rgb(85, 150, 85);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.left {
+    position: initial;
+    background-color: rgb(101, 86, 148);
+    padding: 20px;
+ 
+}
+.right {
+    position: initial;
+    background-color: rgb(162, 202, 206);
+    padding: 20px;
+ 
+}
+.image, .Contact, .Skills, .Language, .Hobbies, .title,
+.Summary, .Experience, .Education, .project {
+    margin-bottom: 30px;
+}
+.h2 {
+    background-color: rgb(4, 96, 150);
+}
+/* Add spacing to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add spacing above the table */
+}
+
+th, td {
+    padding: 10px; /* Add spacing inside table cells */
+    border-collapse: none; /* Add border for better separation */
+    text-align: left;
+}
+
+th {
+    background-color: rgb(162, 202, 206); /* Add a background color to table headers */
+}
+
+.Education {
+    margin-bottom: 20px; /* Add spacing below the entire section */
+}
+h3{
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust the layout for screens smaller than 768px */
+    .full {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .left, .right {
+        padding: 10px; /* Reduce padding for better spacing */
+    }
+}
+
+
+
+
